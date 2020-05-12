@@ -1,0 +1,1 @@
+[{"__symbolic":"module","version":4,"metadata":{},"exports":[{"from":"./inline-svg.config","export":["InlineSVGConfig","SVGScriptEvalMode"]},{"from":"./inline-svg.directive","export":["InlineSVGDirective"]},{"from":"./inline-svg.module","export":["InlineSVGModule"]},{"from":"./svg-cache.service","export":["SVGCacheService"]}]}]

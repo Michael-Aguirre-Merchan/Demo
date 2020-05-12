@@ -1,0 +1,44 @@
+import { ComponentFactoryResolver, ElementRef, EventEmitter, OnChanges, OnDestroy, OnInit, Renderer2, SimpleChanges, ViewContainerRef } from '@angular/core';
+import { SVGCacheService } from './svg-cache.service';
+import { InlineSVGService } from './inline-svg.service';
+import { SVGScriptEvalMode, InlineSVGConfig } from './inline-svg.config';
+export declare class InlineSVGDirective implements OnInit, OnChanges, OnDestroy {
+    private _el;
+    private _viewContainerRef;
+    private _resolver;
+    private _svgCache;
+    private _renderer;
+    private _inlineSVGService;
+    private _config;
+    private platformId;
+    inlineSVG: string;
+    resolveSVGUrl: boolean;
+    replaceContents: boolean;
+    prepend: boolean;
+    injectComponent: boolean;
+    cacheSVG: boolean;
+    setSVGAttributes: {
+        [key: string]: any;
+    };
+    removeSVGAttributes: Array<string>;
+    forceEvalStyles: boolean;
+    evalScripts: SVGScriptEvalMode;
+    fallbackImgUrl: string;
+    onSVGLoaded: (svg: SVGElement, parent: Element | null) => SVGElement;
+    onSVGInserted: EventEmitter<SVGElement>;
+    onSVGFailed: EventEmitter<any>;
+    private _supportsSVG;
+    private _prevUrl;
+    private _svgComp;
+    private _subscription;
+    constructor(_el: ElementRef, _viewContainerRef: ViewContainerRef, _resolver: ComponentFactoryResolver, _svgCache: SVGCacheService, _renderer: Renderer2, _inlineSVGService: InlineSVGService, _config: InlineSVGConfig, platformId: Object);
+    ngOnInit(): void;
+    ngOnChanges(changes: SimpleChanges): void;
+    ngOnDestroy(): void;
+    private _insertSVG;
+    private _processSvg;
+    private _insertEl;
+    private _fail;
+    private _isValidPlatform;
+    private _isSSRDisabled;
+}
