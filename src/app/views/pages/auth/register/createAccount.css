@@ -6945,9 +6945,8 @@
 }
 
 .createAccount .rectangleBase {
-      display: block;
-      position: absolute;
-      box-sizing: content-box;
+    position: absolute;
+      box-sizing: border-box;
       -ms-transform: rotate(0.00deg);
     -webkit-transform: rotate(0.00deg);
     transform: rotate(0.00deg);
@@ -6964,15 +6963,28 @@
       padding-right: 0.00px;
       padding-bottom: 0.00px;
       padding-left: 0.00px;
-      overflow-x: unset;
-      overflow-y: unset;
-      background-color: transparent;
-      width: auto;
-    height: auto;
-    left: 0.00px;
-    top: 0.00px;
-    right: 0.00px;
-    bottom: 0.00px;
+      background-color: rgba(255, 255, 255, 1);
+      border-bottom-color: rgba(219, 219, 219, 1);
+      border-bottom-style: solid;
+      border-bottom-width: 0.50px;
+      border-left-color: rgba(219, 219, 219, 1);
+      border-left-style: solid;
+      border-left-width: 0.50px;
+      border-right-color: rgba(219, 219, 219, 1);
+      border-right-style: solid;
+      border-right-width: 0.50px;
+      border-top-color: rgba(219, 219, 219, 1);
+      border-top-style: solid;
+      border-top-width: 0.50px;
+      border-top-left-radius: 0.00px;
+      border-top-right-radius: 0.00px;
+      border-bottom-left-radius: 0.00px;
+      border-bottom-right-radius: 0.00px;
+      box-shadow: none;
+      width: 450.00px;
+    height: 660.00px;
+    left: 735.00px;
+    top: 124.00px;
 
 }
 
