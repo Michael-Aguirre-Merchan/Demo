@@ -56,7 +56,7 @@
     "ngx-highlightjs": "3.0.3",
     "ngx-perfect-scrollbar": "9.0.0",
     "ngx-permissions": "7.0.3",
-    "object-path": "0.11.5",
+    "object-path": "0.11.6",
     "popper.js": "^1.16.1",
     "rxjs": "6.5.5",
     "socicon": "3.0.5",
